@@ -5,9 +5,11 @@ Visiora AI is a cutting-edge generative image platform designed to bridge the ga
 
 🎨 What Makes Visiora AI Different?
 Unlike generic image generators that focus solely on "prompt-in/image-out," Visiora AI provides:
-Contextual Style Injection: A curated engine that understands nuanced style descriptors better than standard models.
-Personal Vault Integration: A secure, Supabase-backed gallery where every generation is automatically indexed and stored for the authenticated user.
-Privacy-First Architecture: Built with Row Level Security (RLS) to ensure that your creative assets remain your own—no data leakage, no cross-user visibility.
+Visiora AI is a professional-grade image generation platform powered by the Pollinations.ai API. Unlike standard generators, Visiora AI offers:
+High-Fidelity Rendering: Utilizes Pollinations.ai’s optimized generative models for fast, high-quality, and diverse visual outputs.
+Smart Prompt Engineering: The interface is built to automatically refine user intent, ensuring optimal results from the Pollinations engine.
+Persistent Gallery: Every generation is securely vaulted in your personal Supabase storage and every generation is automatically indexed and stored for the authenticated user.
+Privacy-First: Secure RLS-backed database architecture ensures your creative history remains entirely private.
 Optimized Latency: Streamlined backend processing to reduce "time-to-first-pixel."
 
 
@@ -24,7 +26,7 @@ Frontend: React (Vite), Tailwind CSS, Framer Motion
 Backend/Database: Supabase (PostgreSQL)
 Authentication: Supabase Auth
 Storage: Supabase Storage
-AI Engine: Integrated via Supabase Edge Functions (for secure, server-side image processing)
+AI Engine: Pollinations.ai (Direct API integration for high-speed generative image processing) and Integrated via Supabase Edge Functions (for secure, server-side image processing)
 Deployment: Vercel
 
 
