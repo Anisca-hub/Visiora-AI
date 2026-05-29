@@ -1,0 +1,127 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* Visiora AI design system - futuristic premium dark theme */
+
+@theme inline {
+  --font-sans: "Outfit", "Inter", system-ui, sans-serif;
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  --radius: 1rem;
+  /* Visiora palette mapped to oklch */
+  --background: oklch(0.16 0.04 270);          /* #0B1020 */
+  --foreground: oklch(0.98 0.01 250);          /* #F8FAFC */
+  --card: oklch(0.21 0.04 270);                /* #12192F */
+  --card-foreground: oklch(0.98 0.01 250);
+  --popover: oklch(0.21 0.04 270);
+  --popover-foreground: oklch(0.98 0.01 250);
+  --primary: oklch(0.65 0.21 295);             /* #8B5CF6 violet */
+  --primary-foreground: oklch(0.98 0.01 250);
+  --secondary: oklch(0.27 0.04 270);
+  --secondary-foreground: oklch(0.98 0.01 250);
+  --muted: oklch(0.24 0.03 270);
+  --muted-foreground: oklch(0.71 0.03 250);    /* #94A3B8 */
+  --accent: oklch(0.74 0.13 210);              /* #06B6D4 cyan */
+  --accent-foreground: oklch(0.16 0.04 270);
+  --destructive: oklch(0.65 0.23 25);
+  --destructive-foreground: oklch(0.98 0.01 250);
+  --border: oklch(1 0 0 / 8%);
+  --input: oklch(1 0 0 / 12%);
+  --ring: oklch(0.65 0.21 295);
+
+  --sidebar: oklch(0.18 0.04 270);
+  --sidebar-foreground: oklch(0.98 0.01 250);
+  --sidebar-primary: oklch(0.65 0.21 295);
+  --sidebar-primary-foreground: oklch(0.98 0.01 250);
+  --sidebar-accent: oklch(0.24 0.04 270);
+  --sidebar-accent-foreground: oklch(0.98 0.01 250);
+  --sidebar-border: oklch(1 0 0 / 6%);
+  --sidebar-ring: oklch(0.65 0.21 295);
+}
+
+.dark {
+  /* Already dark by default - kept for sidebar component */
+  --background: oklch(0.16 0.04 270);
+  --foreground: oklch(0.98 0.01 250);
+}
+
+@layer base {
+  * { border-color: var(--color-border); }
+  html { color-scheme: dark; }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    background-image:
+      radial-gradient(ellipse 80% 50% at 20% 0%, oklch(0.65 0.21 295 / 0.18), transparent 60%),
+      radial-gradient(ellipse 60% 40% at 100% 100%, oklch(0.74 0.13 210 / 0.14), transparent 60%);
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
+  h1, h2, h3, h4 { letter-spacing: -0.02em; }
+}
+
+@layer utilities {
+  .gradient-text {
+    background: linear-gradient(135deg, #8B5CF6, #06B6D4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .gradient-bg {
+    background: linear-gradient(135deg, #8B5CF6, #06B6D4);
+  }
+  .glass {
+    background: oklch(0.21 0.04 270 / 0.6);
+    backdrop-filter: blur(20px);
+    border: 1px solid oklch(1 0 0 / 0.08);
+  }
+  .glow-primary {
+    box-shadow: 0 0 30px -5px oklch(0.65 0.21 295 / 0.5);
+  }
+  .glow-hover { transition: box-shadow .3s ease, transform .3s ease; }
+  .glow-hover:hover {
+    box-shadow: 0 0 40px -5px oklch(0.65 0.21 295 / 0.6);
+    transform: translateY(-2px);
+  }
+}
+
+/* Font face loaded via Google Fonts (added in <head>) */
