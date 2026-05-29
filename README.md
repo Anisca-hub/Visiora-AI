@@ -78,6 +78,3 @@ Add VITE_SUPABASE_URL and VITE_SUPABASE_PUBLISHABLE_KEY manually.
 Click Deploy.
 
 Note: Ensure your .env file is included in your .gitignore to prevent sensitive credentials (like your IMAGE_API_KEY or SUPABASE_SERVICE_ROLE_KEY) from being committed to your public repository.
-Deployment: Vercel
-
-📂 Project Structure
