@@ -1,4 +1,4 @@
-[gemini-code-1780080513857.txt](https://github.com/user-attachments/files/28405835/gemini-code-1780080513857.txt)Visiora AI 🚀
+Visiora AI 🚀
 
 Visiora AI is a cutting-edge generative image platform designed to bridge the gap between creative intent and high-fidelity visual output. Built for both enthusiasts and power users, it leverages advanced AI models to transform descriptive prompts into stunning, high-resolution visuals within a professional-grade canvas environment.
 
@@ -30,19 +30,8 @@ Deployment: Vercel
 
 📂 Project Structure
 
-visiora-ai/
-├── src/               # Frontend source code
-│   ├── components/    # Reusable UI components
-│   ├── hooks/         # Custom authentication and generation hooks
-│   ├── lib/           # Supabase client initialization
-│   └── routes/        # Application navigation structure
-├── supabase/          # Backend configuration
-│   ├── functions/     # Supabase Edge Functions
-│   └── migrations/    # SQL migration files
-├── .env               # Environment variables (Add your keys here!)
-├── .gitignore         # Prevents .env and node_modules from being pushed
-├── package.json       # Dependencies and scripts
-└── vite.config.ts     # Vite configurationg gemini-code-1780080513857.txt…]()
+<img width="785" height="339" alt="image" src="https://github.com/user-attachments/assets/cfe75b4a-3dc9-468d-a525-2dd6985990ad" />
+
 
 
 🚀 How to Clone and Use
