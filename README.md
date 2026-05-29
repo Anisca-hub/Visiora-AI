@@ -29,6 +29,7 @@ Deployment: Vercel
 
 
 📂 Project Structure
+
 visiora-ai/
 ├── src/               # Frontend source code
 │   ├── components/    # Reusable UI components
