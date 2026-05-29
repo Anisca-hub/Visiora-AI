@@ -1,4 +1,4 @@
-Visiora AI 🚀
+[gemini-code-1780080513857.txt](https://github.com/user-attachments/files/28405835/gemini-code-1780080513857.txt)Visiora AI 🚀
 
 Visiora AI is a cutting-edge generative image platform designed to bridge the gap between creative intent and high-fidelity visual output. Built for both enthusiasts and power users, it leverages advanced AI models to transform descriptive prompts into stunning, high-resolution visuals within a professional-grade canvas environment.
 
@@ -42,7 +42,7 @@ visiora-ai/
 ├── .env               # Environment variables (Add your keys here!)
 ├── .gitignore         # Prevents .env and node_modules from being pushed
 ├── package.json       # Dependencies and scripts
-└── vite.config.ts     # Vite configuration
+└── vite.config.ts     # Vite configurationg gemini-code-1780080513857.txt…]()
 
 
 🚀 How to Clone and Use
